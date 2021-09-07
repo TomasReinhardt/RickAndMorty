@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'ZCOOL';
+  src: url(fonts/ZCOOL/ZCOOL.ttf);
+}
+
+@font-face {
+  font-family: 'Frijole';
+  src: url(./fonts/Frijole/Frijole.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #000000;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteiner .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.conteiner .logo img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.conteiner .randomchar {
+  width: 30%;
+}
+
+.buttons {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons a, .buttons button {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  border: none;
+  width: 80%;
+  max-width: 300px;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'ZCOOL';
+  font-size: 16px;
+  color: #ccc;
+  background-color: #1b1b1b;
+}
+
+cardcharacter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+cardcharacter .conteinercard a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+  margin: 20px;
+  border-radius: 30px 30px 15px 15px;
+  overflow: hidden;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  text-decoration: none;
+  color: #333;
+}
+
+cardcharacter .conteinercard a .image img {
+  width: 100%;
+  height: 100%;
+}
+
+cardcharacter .conteinercard a .character-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 52px;
+  padding: 10px;
+  padding-top: 5px;
+  font-size: 13px;
+  background-color: #1b1b1b;
+  width: 100%;
+}
+
+cardcharacter .conteinercard a .character-info h3, cardcharacter .conteinercard a .character-info .specie {
+  width: 90%;
+  color: #ccc;
+  font-family: 'ZCOOL';
+}
+
+cardcharacter .conteinercard a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+listcharacter .conteinerLC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+listcharacter .conteinerLC .character_item {
+  list-style: none;
+}
+
+listcharacter .conteinerLC .buttons a {
+  width: 50%;
+  max-width: 300px;
+  min-width: 100px;
+}
+
+listcharacter .conteinerLC .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+listcharacter .conteinerLC .search input {
+  padding: 10px;
+  width: 70%;
+  max-width: 500px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Frijole';
+}
+
+.conteinerCH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteinerCH .image {
+  width: 30%;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.conteinerCH .image img {
+  border-radius: 100%;
+}
+
+.conteinerCH .buttons {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.conteinerCH .buttons a {
+  width: 50%;
+  margin: 5px 10px;
+}
+
+.conteinerCH .character-info {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.conteinerCH .character-info h3, .conteinerCH .character-info .dates {
+  width: 100%;
+  color: #ccc;
+  font-family: 'ZCOOL';
+}
+
+.conteinerCH .character-info h3 {
+  font-size: 60px;
+}
+
+.conteinerCH .character-info .alive, .conteinerCH .character-info .dead, .conteinerCH .character-info .unknown {
+  width: 15px;
+  height: 15px;
+}
+
+.conteinerCH .character-info .date, .conteinerCH .character-info .status {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.conteinerCH .character-info .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteinerCH .character-info .status span {
+  margin-left: 10px;
+}
+
+.alive, .dead, .unknown {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 100%;
+}
+
+.alive {
+  background-color: lightgreen;
+}
+
+.dead {
+  background-color: lightcoral;
+}
+
+.unknown {
+  background-color: lightslategrey;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+@media (max-width: 700px) {
+  .conteiner .randomchar {
+    width: 100%;
+  }
+  .conteiner .buttons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .conteinerCH .image {
+    width: 100%;
+  }
+  .conteinerCH .character-info {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .conteinerCH .character-info .status {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=jquery.css.map */
