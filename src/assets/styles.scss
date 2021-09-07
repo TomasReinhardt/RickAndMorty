@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'ZCOOL';
+  src: url(fonts/ZCOOL/ZCOOL.ttf);
+}
+@font-face {
+    font-family: 'Frijole';
+    src: url(./fonts/Frijole/Frijole.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #000000;
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100%;
+            max-width: 500px;
+        }
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .randomchar {
+        width: 30%;
+    }
+}
+.buttons {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    a,button {
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        border: none;
+        width: 80%;
+        max-width: 300px;
+        padding: 20px 0px;
+        margin: 10px 0px;
+        border-radius: 20px;
+        text-align: center;
+        font-family: 'ZCOOL';
+        font-size: 16px;
+        color: #ccc;
+        background-color: rgb(27, 27, 27);
+    }
+}
+
+cardcharacter{
+    display: flex;
+    justify-content: center;
+    .conteinercard {
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+            margin: 20px;
+            border-radius: 30px 30px 15px 15px; 
+            overflow: hidden;
+            transition: all 300ms;
+            text-decoration: none;
+            color: #333;
+            .image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            } 
+            .character-info {
+                display: flex;
+                flex-wrap: wrap;
+                min-height: 52px;
+                padding: 10px;
+                padding-top: 5px;
+                font-size: 13px;
+                background-color: rgb(27, 27, 27);
+                width: 100%;
+                h3, .specie {
+                    width: 90%;
+                    color: #ccc;
+                    font-family: 'ZCOOL';
+                }
+            }
+        }
+        a:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}
+
+listcharacter {
+    .conteinerLC {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .character_item {
+            list-style: none;
+        }
+        .buttons {
+            a {
+                width: 50%;
+                max-width: 300px;
+                min-width: 100px;
+            }
+        }
+        .search {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 50px 0;
+            input {
+                padding: 10px;
+                width: 70%;
+                max-width: 500px;
+                border: none;
+                border-radius: 20px;
+                font-family: 'Frijole';
+            }
+        }
+    }
+}
+
+
+.conteinerCH {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .image {
+        width: 30%;
+        margin: 0 40px;
+        text-align: center;
+        img {
+            border-radius: 100%;
+        }
+    }
+    .buttons {
+        width: 100%;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        a{
+            width: 50%;
+            margin: 5px 10px;
+        }
+
+    }
+    .character-info {
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        h3, .dates{
+            width: 100%;
+            color: #ccc;
+            font-family: 'ZCOOL';
+        }
+        h3 {
+            font-size: 60px;
+        }
+        .alive, .dead, .unknown {
+            width: 15px;
+            height: 15px;
+        }
+        .date, .status {
+            width: 100%;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.alive, .dead, .unknown {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 100%;
+}
+.alive {
+    background-color: lightgreen;
+}
+.dead {
+    background-color: lightcoral;
+}
+.unknown {
+    background-color: lightslategrey;
+}

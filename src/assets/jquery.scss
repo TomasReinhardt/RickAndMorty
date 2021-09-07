@@ -1,0 +1,26 @@
+@media (max-width: 700px){
+    .conteiner {
+        .randomchar {
+            width: 100%;
+        }
+        .buttons {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 930px){
+    .conteinerCH {
+        .image {
+            width: 100%;
+        }
+        .character-info {
+            width: 80%;
+            justify-content: center;
+            text-align: center;
+            .status {
+                justify-content: center;
+            }
+        }
+       
+    }
+}

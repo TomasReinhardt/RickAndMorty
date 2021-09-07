@@ -1,0 +1,9 @@
+<div class="conteiner">
+    <div class="randomchar" #charac>
+        <cardcharacter [character]="character"></cardcharacter>
+    </div>
+    <div class="buttons">
+        <a [routerLink]="['/characters']">Characters</a>
+        <button (click)="random()">Random character</button>
+    </div>
+</div>

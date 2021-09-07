@@ -1,0 +1,10 @@
+<div class="conteinercard">
+    <a [routerLink]="['/character/'+character.id]">
+        <div class="image"> <img src="{{character.image}}" alt=""> </div>
+        <div class="character-info">
+            <span [ngClass]="{'alive': character.status === 'Alive', 'dead' : character.status === 'Dead',  'unknown' : character.status === 'unknown'}"></span>
+            <h3>{{character.name}}</h3>
+            <div class="specie">{{character.species}}</div>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,8 @@
+
+<div class="conteinerLC">
+    <div class="buttons"><a [routerLink]="['/']">Home</a></div>
+    <div class="search"><input type="text" placeholder="Search by name..." [(ngModel)]="nameSearch"/></div>
+    <li class="character_item" *ngFor="let character of characters">
+        <cardcharacter [character]="character" *ngIf="character.name.toLowerCase().includes(nameSearch)"></cardcharacter>
+    </li>
+</div>
